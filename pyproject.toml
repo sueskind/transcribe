@@ -16,13 +16,14 @@ authors = [
     { name = "sueskind", email = "52210599+sueskind@users.noreply.github.com" }
 ]
 urls = { source = "github.com/sueskind/transcribe" }
-scripts = { transcribe = "transcribe.__main__:main" }
+scripts = { transcribe = "transcribe.__main__:app" }
 requires-python = ">=3.11"
 dependencies = [
-
     "pyannote.audio~=3.1",
     "pydub~=0.25.1",
     "openai-whisper==20231117",
+    "typer~=0.9.0",
+    "rich~=13.7.0",
 ]
 
 [tool.setuptools_scm]
