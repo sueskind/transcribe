@@ -1,0 +1,25 @@
+[build-system]
+requires = [
+    "setuptools >= 65",
+    "setuptools_scm[toml]",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transcribe"
+description = "Transcribe recordings including speaker recognition (diarization) and timestamps"
+dynamic = ["version"]
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "sueskind", email = "52210599+sueskind@users.noreply.github.com" }
+]
+urls = { source = "github.com/sueskind/transcribe" }
+scripts = { transcribe = "transcribe.__main__:main" }
+dependencies = [
+
+]
+
+[tool.setuptools_scm]
+write_to = "src/transcribe/_version.py"
